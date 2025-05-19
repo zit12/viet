@@ -1,7 +1,7 @@
 // src/services/api.js
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "https://cap2-nquiz-fe.onrender.com";
+const API_URL = process.env.REACT_APP_API_URL || "https://cap2-nquiz-be.onrender.com";
 
 // Create axios instance
 const api = axios.create({

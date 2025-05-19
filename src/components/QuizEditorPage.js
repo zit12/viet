@@ -70,7 +70,7 @@ export default function QuizEditorPage() {
   useEffect(() => {
     const fetchQuestionTypes = async () => {
       try {
-        const res = await fetch("https://cap2-nquiz-fe.onrender.com/api/question-types");
+        const res = await fetch("https://cap2-nquiz-be.onrender.com/api/question-types");
         const data = await res.json();
         setQuestionTypes(Array.isArray(data) ? data : data.data || []);
       } catch (err) {
