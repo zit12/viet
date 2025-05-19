@@ -1,0 +1,258 @@
+/* HeaderDashboard.css */
+.header-dashboard {
+  width: 100%;
+}
+
+.main-header-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fdfbf5;
+  /* border-bottom: 1px solid #eee; */
+  position: relative;
+}
+
+.logo {
+  color: #0039a6;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pin-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pin-container label {
+  font-size: 14px;
+}
+
+.pin-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.header-dashboard-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-btn,
+.settings-btn-dashboard {
+  color: #666 !important;
+  padding: 8px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.search-btn:hover,
+.settings-btn-dashboard:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  transform: rotate(30deg);
+}
+
+.settings-btn-dashboard {
+  margin: 0 4px !important;
+}
+
+.settings-btn-dashboard svg {
+  font-size: 24px;
+}
+
+.search-btn.active .search-icon {
+  transform: rotate(90deg);
+  color: #ff5722;
+}
+
+.search-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sign-in-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #45a049;
+}
+
+/* Search overlay and animation */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.search-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  position: relative;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.search-modal .search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #0039a6;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-modal .search-input:focus {
+  outline: none;
+}
+
+.close-search-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-search-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pin-container {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-modal {
+    width: 95%;
+  }
+}
+
+.main-nav {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* Center all items horizontally */
+  gap: 20px; /* Add spacing between items */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+.nav-label {
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .nav-label {
+  color: #0039a6;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.user-profile:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.user-avatar {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.username {
+  font-size: 14px;
+  color: #333;
+  margin-left: 4px;
+}

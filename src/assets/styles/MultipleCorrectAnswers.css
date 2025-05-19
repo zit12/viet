@@ -1,0 +1,263 @@
+/* MultipleCorrectAnswers.css */
+
+.multiple-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #111827;
+  border-bottom: 1px solid #374151;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 70px;
+}
+
+.multiple-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.multiple-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.multiple-correct-answers {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #123f44;
+  color: white;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-back-multiple {
+  background: none;
+  color: #cbd5e1;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-done-multiple {
+  background-color: #00c2cb;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-preview-multiple {
+  background-color: #103c3f;
+  color: #fefae0;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-done-multiple:hover {
+  background-color: #01a4ab;
+}
+
+.btn-preview-multiple:hover {
+  background-color: #0d3234;
+}
+
+.multiple-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 90px; /* chừa chỗ cho header */
+  gap: 30px;
+  flex-grow: 1; /* quan trọng để nội dung đẩy footer xuống dưới */
+  padding: 20px 24px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 40px;
+}
+
+.multiple-media-section {
+  flex: 1;
+}
+
+.multiple-media-box {
+  background-color: #6a4c93;
+  height: 400px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-add-media-multiple {
+  background-color: #c084fc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-generate-ai-multiple {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.multiple-form-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.multiple-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e5e5e5;
+  color: #000;
+}
+
+textarea.input {
+  height: 80px;
+  resize: vertical;
+}
+
+.answer-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.answer-input {
+  flex: 1;
+}
+
+.multiple-add-media {
+  margin-top: 5px;
+  color: #00c2cb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.multiple-autocomplete-ai {
+  background-color: #fcd34d;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.multiple-options-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.multiple-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-duplicate-multiple {
+  color: #fff;
+  background-color: #1d3557;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-delete-multiple {
+  background-color: #ef4444;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-settings-multiple,
+.btn-add-slide-multiple {
+  background-color: #00c2cb;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-settings-multiple:hover,
+.btn-add-slide-multiple:hover {
+  background-color: #d1d5db;
+}
+
+.multiple-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #111827;
+  border-top: 1px solid #374151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 1000;
+}

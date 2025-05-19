@@ -1,0 +1,124 @@
+.quiz-game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9fdfb;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 50, 0, 0.1);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e6f4ea;
+  border-radius: 8px;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.question-counter {
+  font-size: 16px;
+  color: #4f6752;
+}
+
+.question-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.player-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-text {
+  font-size: 24px;
+  color: #1c3b2b;
+  margin-bottom: 20px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.option-btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid #d4e7db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #d7f3e3;
+  border-color: #28a745;
+  transform: translateY(-2px);
+}
+
+.option-btn:active {
+  transform: translateY(0);
+}
+
+.result-screen {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.result-screen h2 {
+  font-size: 28px;
+  color: #1c3b2b;
+  margin-bottom: 20px;
+}
+
+.result-screen p {
+  font-size: 20px;
+  color: #28a745;
+  margin-bottom: 30px;
+}
+
+.restart-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restart-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-image {
+    max-width: 100%;
+  }
+
+  .question-text {
+    font-size: 20px;
+  }
+}

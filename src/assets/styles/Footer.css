@@ -1,0 +1,80 @@
+.footer {
+  background-color: #fdfbf5;
+  padding: 20px 40px; /* Giữ padding hiện tại */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Giữ nguyên */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px; /* Thêm padding hai bên container */
+}
+
+.discord-text {
+  font-size: 14px;
+  color: #333;
+}
+.discord-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.discord-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-column a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+/* SearchComponent.css */
+.search-container {
+    position: relative;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-label {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    padding-right: 35px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 150px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-form.expanded .search-input {
+    width: 200px;
+    border-color: #0039a6;
+    box-shadow: 0 0 3px rgba(0, 57, 166, 0.3);
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .search-btn.active {
+    transform: translateX(10px); /* Slide the button to the right when active */
+  }
+  
+  .search-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-btn.active .search-icon {
+    transform: rotate(90deg); /* Rotate the icon when active */
+    color: #ff5722;
+  }
+  
+  /* Animation for the search icon */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .search-form.expanded .search-icon {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* For a subtle hover effect */
+  .search-input:hover {
+    border-color: #bbb;
+  }
+  
+  /* Focus style is handled by the expanded class */
+  .search-input:focus {
+    outline: none;
+  }

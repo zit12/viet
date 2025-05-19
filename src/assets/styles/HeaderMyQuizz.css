@@ -1,0 +1,63 @@
+/* Header tổng thể */
+.header-my-quizzes {
+  width: 100%;
+  height: 100px; /* Chiều cao cố định */
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fdfbf5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Nội dung bên trong header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Logo NQUIZ.com */
+.logo {
+  color: #2196f3;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 23px;
+}
+
+/* Vùng chứa các nút bên phải */
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Nút setting */
+.settings-btn {
+  background: none;
+  color: #555;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.settings-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.sign-in-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

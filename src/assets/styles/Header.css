@@ -1,0 +1,186 @@
+/* Header.css */
+.header {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fdfbf5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky; /* Giữ nguyên sticky để header luôn ở trên cùng */
+  top: 0;
+  z-index: 999;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của .header */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.logo {
+  color: #2196f3;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.pin-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pin-container label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.pin-input {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  width: 160px;
+  transition: border-color 0.3s ease;
+}
+
+.pin-input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-btn,
+.settings-btn {
+  background: none;
+  color: #555;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover,
+.settings-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  stroke: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.search-btn.active .search-icon {
+  transform: rotate(90deg);
+  color: #2196f3;
+}
+
+.sign-in-btn {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Search overlay and animation */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+.search-modal {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 550px;
+  padding: 20px;
+  position: relative;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #2196f3;
+  border-radius: 30px;
+  font-size: 16px;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.close-search-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.close-search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .pin-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-modal {
+    width: 95%;
+  }
+}

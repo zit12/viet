@@ -1,0 +1,125 @@
+body {
+    background-color: #f3f3f4;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+
+.gray-bg {
+    background-color: #f3f3f4;
+}
+
+.loginColumns {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+}
+
+.form-control {
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #18a689;
+    border-color: #18a689;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    border: 1px solid #e7eaec;
+    color: inherit;
+}
+
+.btn-white:hover {
+    background-color: #f3f3f4;
+}
+
+.text-muted {
+    color: #888888;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.block {
+    display: block;
+}
+
+.full-width {
+    width: 100%;
+} 

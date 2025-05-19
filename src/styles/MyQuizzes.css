@@ -1,0 +1,73 @@
+/* MyQuizzes.css */
+
+.my-quizzes-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.my-quizzes-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 28px;
+  color: #2d3a4b;
+  letter-spacing: 1px;
+}
+
+.my-quizzes-empty {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 32px;
+}
+
+.my-quizzes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-quizzes-item {
+  display: flex;
+  align-items: center;
+  background: #f6f8fa;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.my-quizzes-item:hover {
+  background: #e9f0fb;
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.08);
+}
+
+.my-quizzes-item-index {
+  font-weight: bold;
+  color: #1976d2;
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+.my-quizzes-item-title {
+  font-size: 1.1rem;
+  color: #2d3a4b;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .my-quizzes-container {
+    padding: 16px 4px;
+  }
+  .my-quizzes-title {
+    font-size: 1.3rem;
+  }
+  .my-quizzes-item {
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+} 
